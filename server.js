@@ -18,6 +18,11 @@ app.get("/", (req, res) => {
     res.sendFile(path.join(__dirname, "pages/index.html"))
 })
 
+app.get("/style.css", (req, res) => {
+    res.sendFile(path.join(__dirname, "pages/style.css"))
+})
+
+//Starts Server
 app.listen(PORT, () => {
     console.log(`App listening on port: ${PORT}`)
 })

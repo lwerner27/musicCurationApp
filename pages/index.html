@@ -6,10 +6,76 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Sounds Like</title>
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+        <!-- CSS Link -->
+        <link rel="stylesheet" href="./style.css">
     </head>
 
     <body>
-        <h1>This is the home page</h1>
+
+        <header>
+
+            <nav class="blue">
+                <div class="nav-wrapper">
+                    <a href="#" class="brand-logo center">Sounds Like...</a>
+                </div>
+            </nav>
+
+        </header>
+
+        <main>
+
+            <div class="container">
+                <div class="row">
+                    <form class="col s12 m12">
+                        <div class="row">
+
+                            <!-- Text Input Section -->
+                            <div class="input-field col s3 offset-s3">
+                                <input id="artist_name" type="text">
+                                <label for="artist_name">Artist Name</label>
+                            </div>
+
+                            <!-- Filter Choice Option -->
+                            <div class="input-field col s2">
+                                <select>
+                                    <option value="1">Similar Artist</option>
+                                    <option value="2">Genre</option>
+                                </select>
+                                <label>Search By:</label>
+                            </div>
+
+                            <!-- Search Button Colunn -->
+                            <div class="col s3">
+
+                                <a class="waves-effect waves-light btn-large">Search</a>
+                                
+                            </div>
+
+                        </div>
+                    </form>  
+                </div> 
+            </div>
+
+        </main>
+
+        <footer>
+
+        </footer>
+
+        <!-- JQuery Link -->
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+
+        <!-- Script -->
+        <script>
+
+            $('select').formSelect();
+
+        </script>
     </body>
 
 </html>
